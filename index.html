@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <title>Final Project</title>
+  </head>
+
+  <body>
+    <div id="buttons">
+      <fieldset class="slidercontainer">
+        <label class="label">Brush Size</label>
+        <input
+          type="range"
+          min="1"
+          max="50"
+          value="4"
+          class="brushSlider"
+          id="myRange"
+        />
+      </fieldset>
+      <fieldset class="slidercontainer">
+        <label class="label">Pick Paint Color</label>
+        <select id="selectColor" name="color" onchange="changeColorFunction()">
+          <option selected disabled>Pick Color</option>
+          <option value="blue" id="blue">Blue</option>
+          <option value="pink" id="pink">Pink</option>
+          <option value="purple" id="purple">Purple</option>
+          <option value="gradient" id="gradient">Gradient</option>
+        </select>
+      </fieldset>
+      <fieldset class="slidercontainer">
+            <label class="label">Pick Background Color</label>
+        <select
+          id="selectColorBackground"
+          name="backgroundColor"
+          onchange="changeBackground()"
+        >
+          <option selected disabled>Pick Color</option>
+          <option value="black" id="black">Black</option>
+          <option value="white" id="white">White</option>
+          <option value="gradient2" id="gradient2">Gradient</option>
+        </select>
+      </fieldset>
+    </div>
+    <canvas id="particles"> Canvas not working! </canvas>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

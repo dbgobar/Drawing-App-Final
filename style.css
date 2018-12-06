@@ -1,0 +1,53 @@
+* {/*Reset padding, margin and border on all elements*/
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    /*Hide overflow to remove scroller in browsers*/
+    overflow: hidden;
+}
+
+canvas{
+    position:relative;
+}
+#selectColor{
+    margin: 1%;
+    color: white;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+    font-size: 15px;
+    left: 120px;
+    top: 30px;
+}
+#selectColorBackground{
+    margin: 1%;
+    color: white;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+    left: 165px;
+    top: 65px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+.slidercontainer{
+    margin: 1%;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    z-index: 3;
+    font-size:20px;
+
+  }
+#buttons{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 120px;
+    width: 320px;
+    z-index: 2;
+    position: fixed;
+}
+.label{
+  z-index: 1000;
+    color: white;
+}
